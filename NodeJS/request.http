@@ -1,0 +1,36 @@
+
+# Consultar usuarios
+GET http://localhost:3000/api/usuarios
+
+# Consultar salas
+GET http://localhost:3000/api/salas
+
+# Consultar reservas
+GET http://localhost:3000/api/reservas
+
+# Registrar una nueva reserva
+POST http://localhost:3000/api/reservas
+Content-Type: application/json
+
+{
+    "id_usuario": 1,
+    "id_sala": 2,
+    "fecha_inicio": "2026-10-23T10:00:00",
+    "fecha_fin": "2026-10-23T11:00:00"
+}
+
+
+# Probar validacion de reserva
+POST http://localhost:3000/api/reservas
+Content-Type: application/json
+
+{}
+
+# pruebas de los endpoints en request.http
+POST http://localhost:3000/api/reservas
+Content-Type: application/json
+
+{
+    "id_usuario": 1,
+    "id_sala":
+}
